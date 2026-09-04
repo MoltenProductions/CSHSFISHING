@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coral Shores Fishing Club</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4c0 6-6 8-6 15a6 6 0 0 0 12 0" stroke="#F4B942" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="4" r="2.5" fill="#F4B942"/>
+        <path d="M6 27c4 5 9 7 14 7s10-2 14-7" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Coral Shores</span>
+        <span class="tag">Fishing Club</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="current">Home</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="dashboard.html">Club Leader</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline-inverse btn-sm">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Join the club</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Coral Shores High School</p>
+      <h1>Where Coral Shores<br>casts its <em>lines</em>.</h1>
+      <p class="lede">A student-run club for anyone who'd rather be on the water. Log your catches, compete in tournaments, and climb a leaderboard that updates while you're still out on the dock.</p>
+      <div class="hero-actions">
+        <a href="signup.html" class="btn btn-primary">Create an account</a>
+        <a href="leaderboard.html" class="btn btn-outline-inverse">See live leaderboard</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%">
+        <ellipse cx="210" cy="330" rx="180" ry="18" fill="#0B2A21"/>
+        <path d="M60 210c60-70 240-70 300 0" stroke="#F4B942" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+        <path d="M120 190c30-8 60-8 90 4 34 13 66 13 98-6" stroke="#3C8C63" stroke-width="3" fill="none" opacity="0.6"/>
+        <g>
+          <path d="M150 200c40-26 100-26 140 8-14 30-48 46-84 40-30-5-52-24-56-48z" fill="#F4B942"/>
+          <path d="M290 208c14 4 24 14 26 26-14-2-24-10-30-20z" fill="#C98A1E"/>
+          <circle cx="176" cy="200" r="5" fill="#0F3329"/>
+          <path d="M150 200c-10 6-16 4-22-4" stroke="#0F3329" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </g>
+        <path d="M172 195c-6-30-2-70 8-96" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 6" opacity="0.6"/>
+        <circle cx="182" cy="96" r="4" fill="#FFFFFF"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1200 80" preserveAspectRatio="none">
+    <path d="M0 40c150 40 300 40 450 10s300-40 450 0 300 40 300 40V80H0Z"></path>
+  </svg>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stat">
+      <div class="figure">142</div>
+      <div class="label">Active club members</div>
+    </div>
+    <div class="stat">
+      <div class="figure">2,038</div>
+      <div class="label">Catches logged this year</div>
+    </div>
+    <div class="stat">
+      <div class="figure">19</div>
+      <div class="label">Tournaments hosted since 2023</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Upcoming tournaments</h2>
+        <p>Club leaders post new events here as soon as they're scheduled.</p>
+      </div>
+      <a href="dashboard.html" class="btn btn-outline">Club leader tools</a>
+    </div>
+
+    <div class="event-grid">
+      <article class="event-card is-live">
+        <span class="event-status live"><span class="dot"></span>Live now</span>
+        <h3>Saturday Snapper Slam</h3>
+        <div class="event-meta">
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Started 8:00 AM &mdash; ends 2:00 PM</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Coral Shores Pier, Dock B</span>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="chip yellow">Scored by weight</span>
+          <a href="leaderboard.html" class="btn btn-secondary btn-sm">Watch live</a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <span class="event-status"><span class="dot"></span>Scheduled</span>
+        <h3>Redfish Rodeo</h3>
+        <div class="event-meta">
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Sat, Sep 12 &middot; 7:30 AM &ndash; 1:00 PM</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Turtle Cove Jetty</span>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="chip">Scored by length</span>
+          <a href="signup.html" class="btn btn-outline btn-sm">Sign up</a>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <span class="event-status"><span class="dot"></span>Scheduled</span>
+        <h3>Fall Species Count</h3>
+        <div class="event-meta">
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span>Sat, Sep 26 &middot; 8:00 AM &ndash; 3:00 PM</span>
+          </div>
+          <div class="row">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Coral Shores Pier, all docks</span>
+          </div>
+        </div>
+        <div class="card-foot">
+          <span class="chip">Most species</span>
+          <a href="signup.html" class="btn btn-outline btn-sm">Sign up</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>How joining works</h2>
+        <p>Every member starts the same way &mdash; club leader and admin access is unlocked separately.</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Create an account</h3>
+        <p>Sign up with your Coral Shores email. Members can register for tournaments and log catches right away.</p>
+      </div>
+      <div class="step">
+        <h3>Get on the water</h3>
+        <p>Show up to a scheduled tournament, or fish casually and log catches for the season-long species board.</p>
+      </div>
+      <div class="step">
+        <h3>Track the leaderboard</h3>
+        <p>Rankings update the moment a club leader confirms a catch &mdash; no waiting for results after the event ends.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Live leaderboard preview</h2>
+        <p>A snapshot from the Saturday Snapper Slam, in progress now.</p>
+      </div>
+      <a href="leaderboard.html" class="btn btn-outline">Open full leaderboard</a>
+    </div>
+
+    <div class="board">
+      <div class="board-inner">
+        <div class="board-head">
+          <h3>Saturday Snapper Slam &mdash; heaviest catch</h3>
+          <span class="chip yellow">Ends in 2h 14m</span>
+        </div>
+        <table class="board-table">
+          <thead>
+            <tr><th>Rank</th><th>Angler</th><th>Species</th><th>Weight</th><th>Time logged</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="rank-badge gold">1</span></td>
+              <td>Maya Torres</td>
+              <td>Red Snapper</td>
+              <td>6.8 lb</td>
+              <td>11:42 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge silver">2</span></td>
+              <td>Jonah Reyes</td>
+              <td>Mangrove Snapper</td>
+              <td>5.1 lb</td>
+              <td>10:58 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge bronze">3</span></td>
+              <td>Ellie Park</td>
+              <td>Red Snapper</td>
+              <td>4.6 lb</td>
+              <td>9:20 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">4</span></td>
+              <td>Sam Whitfield</td>
+              <td>Mangrove Snapper</td>
+              <td>3.9 lb</td>
+              <td>1:05 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt text-center">
+  <div class="container">
+    <h2>Ready to fish with the club?</h2>
+    <p style="margin: 0 auto 28px;">It takes less than two minutes to create an account and sign up for the next tournament.</p>
+    <a href="signup.html" class="btn btn-primary">Create your account</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <h4>Coral Shores Fishing Club</h4>
+        <p style="max-width: 34ch; color: rgba(255,255,255,0.7);">A Coral Shores High School student organization. Meets every Saturday at the school pier, weather permitting.</p>
+      </div>
+      <div>
+        <h4>Club</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="signup.html">Join the club</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="dashboard.html">Club leader tools</a></li>
+          <li><a href="admin.html">Admin panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Coral Shores Fishing Club</span>
+      <span>Coral Shores High School</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

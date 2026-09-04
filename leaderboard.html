@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Leaderboard &mdash; Coral Shores Fishing Club</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4c0 6-6 8-6 15a6 6 0 0 0 12 0" stroke="#F4B942" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="4" r="2.5" fill="#F4B942"/>
+        <path d="M6 27c4 5 9 7 14 7s10-2 14-7" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Coral Shores</span>
+        <span class="tag">Fishing Club</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="leaderboard.html" class="current">Leaderboard</a>
+      <a href="dashboard.html">Club Leader</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline-inverse btn-sm">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Join the club</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Leaderboards</h1>
+        <p>Standings update the moment a club leader confirms a catch.</p>
+      </div>
+      <div class="field" style="margin:0; min-width:260px;">
+        <label for="event-select">Viewing event</label>
+        <select class="input" id="event-select">
+          <option>Saturday Snapper Slam &mdash; Live</option>
+          <option>Redfish Rodeo &mdash; Scheduled Sep 12</option>
+          <option>Summer Kickoff Cast &mdash; Ended Aug 16</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="board">
+      <div class="board-inner">
+        <div class="board-head">
+          <div>
+            <span class="event-status live" style="color: var(--yellow-500);"><span class="dot"></span>Live now</span>
+            <h3 style="margin-top:6px;">Saturday Snapper Slam &mdash; heaviest catch</h3>
+            <p style="color: rgba(255,255,255,0.65); margin:4px 0 0; font-size:0.9rem;">Coral Shores Pier, Dock B &middot; started 8:00 AM &middot; ends 2:00 PM</p>
+          </div>
+          <span class="chip yellow">Ends in 2h 14m</span>
+        </div>
+
+        <table class="board-table">
+          <thead>
+            <tr><th>Rank</th><th>Angler</th><th>Species</th><th>Weight</th><th>Time logged</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="rank-badge gold">1</span></td>
+              <td>Maya Torres</td>
+              <td>Red Snapper</td>
+              <td>6.8 lb</td>
+              <td>11:42 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge silver">2</span></td>
+              <td>Jonah Reyes</td>
+              <td>Mangrove Snapper</td>
+              <td>5.1 lb</td>
+              <td>10:58 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge bronze">3</span></td>
+              <td>Ellie Park</td>
+              <td>Red Snapper</td>
+              <td>4.6 lb</td>
+              <td>9:20 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">4</span></td>
+              <td>Sam Whitfield Jr.</td>
+              <td>Mangrove Snapper</td>
+              <td>3.9 lb</td>
+              <td>1:05 PM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">5</span></td>
+              <td>Ravi Patel</td>
+              <td>Red Snapper</td>
+              <td>3.4 lb</td>
+              <td>8:47 AM</td>
+            </tr>
+            <tr>
+              <td><span class="rank-badge">6</span></td>
+              <td>Chloe Bennett</td>
+              <td>Mangrove Snapper</td>
+              <td>2.9 lb</td>
+              <td>12:12 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p style="text-align:center; color: var(--ink); opacity:0.55; font-size:0.85rem; margin-top:16px;">
+      Updated automatically as the club leader confirms new catches &middot; last refreshed just now
+    </p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Season standings</h2>
+        <p>Combined points across every tournament this season.</p>
+      </div>
+    </div>
+
+    <table class="data-table">
+      <thead>
+        <tr><th>Rank</th><th>Angler</th><th>Events fished</th><th>Species logged</th><th>Best catch</th><th>Season points</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="rank-badge gold">1</span></td>
+          <td>Maya Torres</td>
+          <td>7</td>
+          <td>9</td>
+          <td>6.8 lb Red Snapper</td>
+          <td>412</td>
+        </tr>
+        <tr>
+          <td><span class="rank-badge silver">2</span></td>
+          <td>Jonah Reyes</td>
+          <td>8</td>
+          <td>7</td>
+          <td>5.9 lb Redfish</td>
+          <td>398</td>
+        </tr>
+        <tr>
+          <td><span class="rank-badge bronze">3</span></td>
+          <td>Ellie Park</td>
+          <td>6</td>
+          <td>8</td>
+          <td>5.2 lb Mangrove Snapper</td>
+          <td>355</td>
+        </tr>
+        <tr>
+          <td><span class="rank-badge">4</span></td>
+          <td>Ravi Patel</td>
+          <td>7</td>
+          <td>6</td>
+          <td>4.8 lb Red Snapper</td>
+          <td>341</td>
+        </tr>
+        <tr>
+          <td><span class="rank-badge">5</span></td>
+          <td>Chloe Bennett</td>
+          <td>5</td>
+          <td>7</td>
+          <td>4.1 lb Sheepshead</td>
+          <td>298</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <h4>Coral Shores Fishing Club</h4>
+        <p style="max-width: 34ch; color: rgba(255,255,255,0.7);">A Coral Shores High School student organization. Meets every Saturday at the school pier, weather permitting.</p>
+      </div>
+      <div>
+        <h4>Club</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="signup.html">Join the club</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li><a href="login.html">Log in</a></li>
+          <li><a href="dashboard.html">Club leader tools</a></li>
+          <li><a href="admin.html">Admin panel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Coral Shores Fishing Club</span>
+      <span>Coral Shores High School</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

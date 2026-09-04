@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create an account &mdash; Coral Shores Fishing Club</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4c0 6-6 8-6 15a6 6 0 0 0 12 0" stroke="#F4B942" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="4" r="2.5" fill="#F4B942"/>
+        <path d="M6 27c4 5 9 7 14 7s10-2 14-7" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Coral Shores</span>
+        <span class="tag">Fishing Club</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">Home</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <a href="dashboard.html">Club Leader</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="login.html" class="btn btn-outline-inverse btn-sm">Log in</a>
+      <a href="signup.html" class="btn btn-primary btn-sm">Join the club</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <aside class="auth-visual">
+    <div>
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+        <path d="M20 4c0 6-6 8-6 15a6 6 0 0 0 12 0" stroke="#F4B942" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="20" cy="4" r="2.5" fill="#F4B942"/>
+      </svg>
+    </div>
+    <div>
+      <p class="quote">"Best part of my week is Saturday mornings at the pier with this club."</p>
+      <p class="quote-attr">&mdash; Maya Torres, Class of 2027</p>
+    </div>
+    <div style="font-size:0.85rem; color: rgba(255,255,255,0.6);">Coral Shores High School &middot; Fishing Club</div>
+  </aside>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <p class="eyebrow">Get started</p>
+      <h1>Create your account</h1>
+      <p class="sub">Choose the account type that fits you. Club leader and admin accounts need a special code from the club's developer/advisor.</p>
+
+      <form id="signup-form">
+        <div class="field">
+          <label>I'm joining as a&hellip;</label>
+          <div class="role-picker" role="radiogroup" aria-label="Account type">
+            <label class="role-option">
+              <input type="radio" name="role" value="member" checked>
+              <span class="card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2"/><path d="M4 21c1.6-3.8 4.8-6 8-6s6.4 2.2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <span class="role-name">Member</span>
+                <span class="role-desc">Log catches, join events</span>
+              </span>
+            </label>
+            <label class="role-option">
+              <input type="radio" name="role" value="leader">
+              <span class="card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <span class="role-name">Club Leader</span>
+                <span class="role-desc">Create &amp; run events</span>
+              </span>
+            </label>
+            <label class="role-option">
+              <input type="radio" name="role" value="admin">
+              <span class="card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l7 3v6c0 5-3.4 8.4-7 11-3.6-2.6-7-6-7-11V5l7-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                <span class="role-name">Admin</span>
+                <span class="role-desc">Manage the whole club</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="code-field" id="code-field" hidden>
+          <label for="special-code">Special access code</label>
+          <input class="input" type="text" id="special-code" name="special-code" placeholder="Enter the code from your club advisor">
+          <p class="hint">Club leader and admin accounts are verified with a one-time code from the developer/faculty advisor. Ask them if you don't have yours.</p>
+        </div>
+
+        <div class="input-row">
+          <div class="field">
+            <label for="first-name">First name</label>
+            <input class="input" type="text" id="first-name" placeholder="Jordan">
+          </div>
+          <div class="field">
+            <label for="last-name">Last name</label>
+            <input class="input" type="text" id="last-name" placeholder="Alvarez">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">School email</label>
+          <input class="input" type="email" id="email" placeholder="jordan.alvarez@coralshores.edu">
+        </div>
+
+        <div class="field">
+          <label for="grade">Grade level</label>
+          <select class="input" id="grade">
+            <option>9th grade</option>
+            <option>10th grade</option>
+            <option>11th grade</option>
+            <option>12th grade</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <div class="field">
+            <label for="password">Password</label>
+            <input class="input" type="password" id="password" placeholder="Create a password">
+          </div>
+          <div class="field">
+            <label for="confirm-password">Confirm password</label>
+            <input class="input" type="password" id="confirm-password" placeholder="Re-enter password">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Create account</button>
+      </form>
+
+      <p class="form-foot">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-bottom" style="border-top: none; padding-top: 0;">
+    <span>&copy; 2026 Coral Shores Fishing Club</span>
+    <span>Coral Shores High School</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('main-nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+
+  const roleInputs = document.querySelectorAll('input[name="role"]');
+  const codeField = document.getElementById('code-field');
+  function updateCodeField() {
+    const selected = document.querySelector('input[name="role"]:checked').value;
+    codeField.hidden = selected === 'member';
+  }
+  roleInputs.forEach(input => input.addEventListener('change', updateCodeField));
+  updateCodeField();
+
+  document.getElementById('signup-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('This is a UI preview only \u2014 account creation isn\u2019t connected yet.');
+  });
+</script>
+</body>
+</html>
